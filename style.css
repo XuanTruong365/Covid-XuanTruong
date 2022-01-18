@@ -1,0 +1,460 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header__container {
+    margin-top: 32px;
+    background: url(https://static.mediacdn.vn/covid19.gov.vn/image/bg-header.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 130px;
+}
+
+.header {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.header__logo {
+    position: absolute;
+    top: -30px;
+    left: 50px;
+}
+
+.header__heading {
+    position: absolute;
+    top: 55px;
+    left: 197px;
+    color: #fff;
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
+.header__call {
+    position: absolute;
+    top: -29px;
+    right: 139px;
+    width: max-content;
+    height: 28px;
+    border-radius: 8px;
+    font-size: 16px;
+    text-align: center;
+    line-height: 28px;
+    padding: 0 10px;
+    text-transform: capitalize;
+    background-color: red;
+    color: #fff;
+}
+
+marquee {
+    font-size: 20px;
+    font-weight: 600;
+    color: blue;
+    text-transform: uppercase;
+    padding: 0 0 10px 0;
+}
+
+.column-color,.column-color-2,.column-color-3 {
+    background-color: #fde8e9;
+    text-align: center;
+    padding: 10px 12px;
+    height: 80px;
+}
+
+.column-color-2 {
+    background-color: #e9f6ec;
+}
+
+.column-color-3 {
+    background-color: #f0eff4;
+}
+
+.body__heading {
+    position: relative;
+    font-size: 25px;
+    color: blue;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    padding-left: 10px;
+}
+
+.body__heading::after {
+    top: 2px;
+    position: absolute;
+    content: "";
+    left: 0;
+    width: 5px;
+    height: 23px;
+    border-left: 4px solid red;
+}
+
+.body__heading::before {
+    position: absolute;
+    content: "";
+    left: 4px;
+    top: 2px;
+    width: 5px;
+    height: 23px;
+    border-left: 4px solid blue;
+}
+
+.heading-line {
+    margin: 20px 0;
+}
+
+.body-text {
+    font-size: 16px;
+    color: #000;
+    text-transform: uppercase;
+}
+
+.body-value {
+    font-size: 18px;
+    color: red;
+}
+
+.body-note {
+    font-size: 18px;
+    color: #999;
+    text-transform: capitalize;
+}
+
+.note-value {
+    font-size: 18px;
+    color: #888;
+}
+
+.column-1-4-container {
+    display: flex;
+    height: 145px;
+    width: 100%;
+}
+
+.news-img {
+    position: relative;
+    width: 233px;
+    height: 145px;
+    border-radius: 5px;
+}
+
+.container-img {
+    position: relative;
+}
+
+.container-img::after {
+    content: " ";
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    z-index: 1;
+    width: 0;
+    height: 0;
+    border-bottom: 40px solid #fff;
+    border-left: 40px solid red;
+    transition: all 0.25s ease;
+    display: none;
+}
+
+.container-img:hover::after {
+    display: block;
+}
+
+.container-img::before {
+    z-index: 1;
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0, 0, 0.5);
+    transition: all 0.25s ease;
+    border-radius: 5px;
+    opacity: 0;
+}
+
+.container-img:hover::before {
+    opacity: 1;
+}
+
+.right-title {
+    width: 100px;
+   
+}
+
+.para-link {  
+    font-weight: 600;
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+    display: block;
+    text-decoration: none;
+}
+
+.news-right {
+    display: flex;
+    flex-direction: column;
+    padding-left: 12px;
+}
+
+.news-para {
+    font-size: 16px;
+    color: #444;
+    font-weight: normal;
+}
+
+.column-gap {
+    margin-bottom: 18px;
+}
+
+.world-link {
+    font-size: 20px;
+    font-weight: 600;
+    color: #000;
+    text-decoration: none;
+    display: block;
+    margin: 15px 0;
+}
+
+.news-world-img {
+    width: 100%;
+    height: 326px;
+    border-radius: 5px;
+}
+
+.world-img {
+    width: 180px;
+    height: 113px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.world-sub {
+    display: flex;
+    flex-direction: column;
+}
+    
+.footer {
+    position: relative;
+    width: 100%;
+    background-color: blue;
+    padding: 18px 68px;
+}
+
+.footer__heading {
+    font-size: 18px;
+    color: #fff;
+}
+
+.address,.footer-call,.email {
+    font-size: 16px;
+    color: #fff;
+    padding: 5px 0;
+}
+
+.footer-img-link {
+    position: absolute;
+    top: 22px;
+    right: 200px;
+}
+header {
+    position: relative;
+}
+
+.sosial-container {
+    position: fixed;
+    z-index: 1;
+    top: 160px;
+    right: 23px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sosial-container i {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    margin: 18px 0;
+    font-size: 18px;
+    color: blue;
+    transition: 0.25s;
+    animation: ripple 0.7s linear infinite;
+}
+
+@keyframes ripple {
+    0% {
+        box-shadow: 0 0 0 0 rgb(28 182 152 / 20%), 0 0 0 2px rgb(28 182 152 / 20%), 0 0 0 6px rgb(28 182 152 / 20%), 0 0 0 10px rgb(28 182 152 / 20%);
+    }
+    100% {
+        box-shadow: 0 0 0 5px rgb(28 182 152 / 20%), 0 0 0 15px rgb(28 182 152 / 20%), 0 0 0 20px rgb(28 182 152 / 20%), 0 0 0 30px rgb(28 182 152 / 0%);
+    }
+}
+
+.sosial-container i:hover {
+    color: red;
+    cursor: pointer;
+}
+
+/* css chitiet.css start */
+
+.heading {
+    position: relative;
+    font-size: 20px;
+    font-weight: 600;
+    color: blue;
+}
+
+.row-gap {
+    margin-top: 30px;
+}
+
+.heading::after {
+    position: absolute;
+    content: "";
+    width: 1200px;
+    border-top: 1px solid #888;
+    top: 32px;
+    left: 0;
+}
+
+.go-back {
+    text-decoration: none;
+    font-size: 18px;
+    color: red;
+}
+
+.para-img-link {
+    width: 100%;
+    height: 500px;
+}
+
+.body-title {
+    font-weight: bold;
+    font-size: 32px;
+    color: blue;
+    margin-bottom: 23px;
+}
+
+.body-lable {
+    display: block;
+    margin-bottom: 20px;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 14px;
+    color: #515151;
+}
+
+.body-para {
+    font-family: Arial;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 26px;
+    color: #444;
+    margin-bottom: 20px;
+}
+
+.body-para-news {
+    font-family: Arial;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 28px;
+    color: #333;
+}
+
+.body-para-news a {
+    text-decoration: none;
+    color: blue;
+}
+
+.body-para-img {
+    background-color: #e9e9e9;
+    color: #000;
+    font-size: 14px;
+    line-height: 26px;
+}
+
+.img-title {
+    padding: 8px 5px;
+}
+
+.navbar-left {
+    background-color: #fee9ea;
+    color: red;
+    font-size: 16px;
+    text-align: center;
+    text-transform: capitalize;
+    line-height: 38px;
+    font-weight: 600;
+    border: 1px solid #ccc;
+}
+
+.navbar-left-phonenumber {
+    border: 1px solid #ccc;
+}
+
+.phonenumber-heading {
+    font-size: 20px;
+    color: #000;
+    line-height: 50px;
+    background-color: #f0eff4;
+    text-align: center;
+}
+
+.phonenumber-list {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    font-size: 18px;
+}
+
+.phonenumber-items {
+    display: flex;
+    line-height: 60px;
+    border-bottom: 1px solid #ccc;
+}
+
+.phone-name {
+    font-size: 16px;
+    font-weight: normal;
+    width: 238px;
+    color: #666;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-transform: capitalize;
+}
+
+.phone-number {
+    color: red;
+    margin-left: 28px;
+}
+
+.footer-para {
+    margin: 15px 0;
+}
+
+.sub-border {
+    border: 1px solid #888;
+    overflow: hidden;
+}
+
+.img-qc {
+    margin: 18px 0;
+}
+
+.img-qc img{
+    width: 100%;
+}
+/* css chitiet.css end */
+
+  
